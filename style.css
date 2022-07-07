@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Helvetica Neue",
+    "Arial",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "BIZ UDPGothic",
+    "Meiryo",
+    sans-serif;
+
+  background-image: url(./imgs/denim.jpg);
+  background-size: 100px;
+  background-repeat: repeat;
+}
+
+h2, h3, h4, h5, p, ul {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+/*============================*/
+
+/*ヘッダー＆フッター*/
+.bar {
+  height: 20px;
+  background-color: #CBFFD3;
+}
+
+/*============================*/
+
+/*可変横並び*/
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*横2等分*/
+.half {
+  width: 50%;
+}
+
+/*横3等分*/
+.three-parts {
+  width: 33%;
+}
+
+/*============================*/
+
+/*名前エリア*/
+.title {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*名前と肩書き*/
+h1 {
+  display: inline-block;
+  margin: 150px 0;
+  padding: 0 20px;
+  border-bottom: solid 4px #DC143C;
+  color: #99CCFF;
+  font-weight: bold;
+}
+
+/*プロフ画像エリア*/
+.pic-area {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*プロフ画像*/
+.prof-pic {
+  width: 300px;
+}
+
+/*============================*/
+
+/*全体枠*/
+.frame {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*プロフィール枠（左）*/
+.prof1 {
+  padding: 20px;
+  margin: 20px 15px 20px 40px;
+  background-color: #F0FFF0;
+  border-radius: 10px;
+}
+
+/*スキル・学習資料・趣味枠（右）*/
+.prof2 {
+  padding: 20px;
+  margin: 20px 40px 20px 15px;
+  background-color: #F0FFF0;
+  border-radius: 10px;
+}
+
+/*font awesome*/
+i {
+  margin-right: .5rem;
+}
+
+/*============================*/
+
+/*制作物エリア大枠*/
+.product {
+  padding: 20px;
+  margin: 20px 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*制作物・見出し*/
+.product-idx {
+  text-align: center;
+}
+
+.product-idx h2 {
+  display: inline-block;
+  background-color: #99CCFF;
+  color: #660099;
+  padding: 4px 20px;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/*制作物01・タイトルエリア*/
+.product-title {
+  text-align: center;
+}
+
+/*タイトル枠内*/
+.product-title h3 {
+  display: inline-block;
+  text-align: left;
+  padding: 4px 10px 4px 40px;
+  margin-bottom: 8px;
+  background-color: #003366;
+  color: white;
+  border-radius: 20px;
+  text-indent: -12px;
+}
+
+/*URL*/
+.product-title p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/*トップページ画像エリア*/
+.top-page {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+/*トップページ画像*/
+.top-page img {
+  width: 100%;
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 20%);
+}
+
+/*概要枠*/
+.p-box {
+  padding: 20px;
+  margin: 20px;
+  border: solid 4px #006699;
+  border-radius: 10px;
+}
+
+/*============================*/
+
+.next-icon {
+  text-align: center;
+  font-size: 40px;
+}
+
+/*============================*/
+
+.flow {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.flow h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.flow-list {
+  flex-wrap: wrap;
+}
+
+.flow-list p {
+  display: inline-block;
+  width: 195px;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  margin-right: 5px;
+  background-color: #663399;
+  color: white;
+  padding: 3px 5px 3px 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.flow-list p:hover {
+  opacity: .7;
+}
+
+.fa-angles-down {
+  font-size: 9px;
+}
+
+/*============================*/
+
+.flow-title {
+  display: inline-block;
+  background-color: #663399;
+  color: white;
+  margin-top: 0;
+  padding: 3px 15px;
+  border-radius: 15px;
+}
+
+.flow-summery {
+  margin-bottom: 1rem;
+}
+
+.flow-summery span {
+  background: linear-gradient(transparent 60%, #FFFF88 60%);
+  border-radius: 5px;
+}
+
+.old-page {
+  text-align: center;
+}
+
+.old-page img {
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 20%);
+}
+
+/*============================*/
+/*============================*/
+
+@media only screen and (max-width: 959.98px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    order: 2;
+    height: 100px;
+    justify-content: center;
+  }
+
+  h1 {
+    display: block;
+    margin: 20px 0;
+    text-indent: 0;
+    padding: 0 15px;
+  }
+
+  .pic-area {
+    order: 1;
+    height: 80%;
+    max-width: 250px;
+    margin-top: 30px;
+  }
+
+  .prof-pic {
+    width: 100%;
+  }
+
+  .half {
+    width: 90%;
+  }
+
+  .prof1, .prof2, .product {
+    margin: 20px;
+    width: 90%;
+  }
+
+  .flow-list {
+    flex-direction: row;
+  }
+}
+
+
+@media only screen and (max-width: 519.98px) {
+  
+}
