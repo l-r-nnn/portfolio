@@ -35,7 +35,29 @@ h2, h3, h4, h5, p, ul {
 /*ヘッダー上下の帯画像*/
 .header-band {
   background-image: url(./imgs/b_illust_19_0M.png);
+  background-repeat: repeat-x;
+  background-size: 760px 34px;
+  animation-name: header-band;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   height: 34px;
+}
+
+/*下の帯画像の動きを逆方向に*/
+.reverse-animation {
+  animation-direction: reverse;
+}
+
+/*帯画像のアニメーション制御*/
+@keyframes header-band {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 760px 0;
+  }
 }
 
 /*ヘッダーエリア*/
@@ -64,7 +86,8 @@ header {
 @media only screen and (max-width: 959.98px) {
   /*ヘッダー上下の帯画像*/
   .header-band {
-    height: 7px;
+    background-size: 380px 17px;
+    height: 16px;
   }
 
   /*タイトル画像（映写機）*/
